@@ -18,9 +18,9 @@ class ImovelController extends Controller
 
     	$seo = [
     		'titulo'=>$imovel->titulo,
-        'descricao'=>$imovel->descricao,
-        'imagem'=>asset($imovel->imagem),
-        'url'=> route('site.imovel',[$imovel->id,str_slug($imovel->titulo,'_')])
+			'descricao'=>$imovel->descricao,
+			'imagem'=>asset($imovel->imagem),
+			'url'=> route('site.imovel',[$imovel->id,str_slug($imovel->titulo,'_')])
     	];
 
 
